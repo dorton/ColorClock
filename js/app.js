@@ -28,6 +28,8 @@ function app() {
         var showTime = [hours, minutes, seconds];
         div.textContent = showTime.join(":");
         body.style["background-color"] = "rgb(" + convertTimeToRGB(showTime).join(",") + ")";
+    	underline.style["width"] = 18*(seconds/60)+"em";
+    	overline.style["width"] = 18*(seconds/60)+"em";
     }
 
     function convertTimeToRGB(timeConvert) {
@@ -42,5 +44,7 @@ function app() {
     }
     var div = document.querySelector(".clock");
     var body = document.querySelector("body");
+    var underline = document.querySelector(".underline");
+    var overline = document.querySelector(".overline");
     setInterval(time, 1000);
 }
