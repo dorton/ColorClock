@@ -21,10 +21,10 @@ function app() {
             hours = "0" + hours;
 
         }
-        if (hours > 12) {
-            hours = hours - 12;
-            hours = "0" + hours;
-        }
+        //if (hours > 12) {
+        //    hours = hours - 12;
+        //    hours = "0" + hours;
+        //}
         var showTime = [hours, minutes, seconds];
         div.textContent = showTime.join(":");
         body.style["background-color"] = "rgb(" + convertTimeToRGB(showTime).join(",") + ")";
