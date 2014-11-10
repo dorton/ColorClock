@@ -40,8 +40,9 @@ body {
     transform: translate(-50%, -900%);
 }
 body::after {
-	width:100%;
-	height:100%;
+    width: 100%;
+    height: 100%;
     background-image: repeating-radial-gradient(circle, white, black);
     -webkit-background-image: repeating-radial-gradient(circle, white, black);
 }
+
